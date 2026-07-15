@@ -1,0 +1,41 @@
+DAX QUERIES FOR LOAN RISK PROJECT----
+---------------------------------------------------------------------------------------------------------------
+##Inside the public borrower_risk table we will create DAX measures
+ 1.Total Borrowers =
+DISTINCTCOUNT('public borrower_risk_summary'[borrower_id])
+
+2.Total Loans =
+COUNT('public borrower_risk_summary'[loan_id])
+
+3.Total Loan Amount =
+SUM('public borrower_risk_summary'[loan_amount])
+
+Format Total Loan Amount:
+Currency to whole number
+
+4.Average Loan Amount =
+AVERAGE('public borrower_risk_summary'[loan_amount])
+
+5.Average Interest Rate =
+AVERAGE('public borrower_risk_summary'[interest_rate])
+
+6.Defaulted Loans =
+CALCULATE(
+    COUNTROWS('public borrower_risk_summary'),
+    'public borrower_risk_summary'[defaulted] = TRUE()
+)
+
+7.Default Rate =
+DIVIDE(
+    [Defaulted Loans],
+    [Total Loans]
+)
+
+Format default rate as %
+Default Rate-Measure tools-Format-Decimal Number-Percentage
+
+8.Average Credit Score = 
+AVERAGE('public borrower_risk_summary'[credit_score])
+
+9.Average DTI =
+AVERAGE('public borrower_risk_summary'[dti_ratio])
