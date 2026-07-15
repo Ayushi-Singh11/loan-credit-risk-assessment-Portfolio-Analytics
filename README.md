@@ -23,20 +23,24 @@ How do borrower demographics influence lending patterns?
 | Average Interest Rate  | 10.64% |
 | Portfolio Default Rate | 24.29% |
 # Tools & Technologies
-PostgreSQL
-SQL
-Power BI
-DAX
-GitHub
-# SQL Workflow
-Imported raw loan application data into PostgreSQL.
-Performed data cleaning by handling null values, duplicates, and inconsistent records.
-Conducted exploratory data analysis (EDA).
-Created SQL views for reporting and dashboarding.
-Generated business insights using SQL aggregations and analytical queries.
-Dashboard Overview
+1.PostgreSQL
 
-# The Power BI dashboard consists of three interactive pages:
+2.Power BI
+
+3.DAX
+
+4.GitHub
+
+# SQL Workflow
+
+1.Imported raw loan application data(csv) into PostgreSQL.
+2.Performed data cleaning by handling null values, duplicates, and inconsistent records.
+3.Conducted exploratory data analysis (EDA).
+4.Created SQL views for reporting and dashboarding.
+5.Generated business insights using SQL aggregations and analytical queries.
+# Dashboard Overview
+
+#The Power BI dashboard consists of three interactive pages:
 
 1. Executive Overview
 
@@ -52,20 +56,31 @@ Analyzes borrower demographics including education, home ownership, employment s
 
 # Key Business Insights
 
-Portfolio consists of 500 borrowers across 601 loans, with a total exposure of 13.31M.
-Overall portfolio default rate is 24.29%, representing 146 defaulted loans.
-Virginia (58.33%), California (50.00%), and Missouri (41.94%) recorded the highest observed default rates.
-Part-Time employees (27.69%) showed the highest default rate among employment categories.
-Unknown (33.33%) and Wedding (28.57%) loan purposes exhibited the highest default rates.
-Mortgage holders (216 borrowers | 43.2%) formed the largest borrower segment.
-Bachelor's degree holders (190 borrowers) represented the largest education group.
-Borrowers with Master's degrees had the highest average loan amount (25K).
+1.Portfolio consists of 500 borrowers across 601 loans, with a total exposure of 13.31M.
+
+2.Overall portfolio default rate is 24.29%, representing 146 defaulted loans.
+
+3.Virginia (58.33%), California (50.00%), and Missouri (41.94%) recorded the highest observed default rates.
+
+4.Part-Time employees (27.69%) showed the highest default rate among employment categories.
+
+5.Unknown (33.33%) and Wedding (28.57%) loan purposes exhibited the highest default rates.
+
+6.Mortgage holders (216 borrowers | 43.2%) formed the largest borrower segment.
+
+7.Bachelor's degree holders (190 borrowers) represented the largest education group.
+
+8.Borrowers with Master's degrees had the highest average loan amount (25K).
 
 # Business Recommendations
 
-Prioritize periodic monitoring of states with higher observed default rates to identify emerging portfolio risks.
-Perform additional analysis of high-default loan purposes to understand contributing factors before adjusting lending strategies.
-Monitor borrower segments with higher average DTI ratios during portfolio reviews.
-Use borrower segmentation (education, employment, and home ownership) to support targeted portfolio monitoring and customer engagement.
-Leverage interactive dashboards for ongoing portfolio performance tracking and management reporting.
+1.Prioritize periodic monitoring of states with higher observed default rates to identify emerging portfolio risks.
+
+2.Perform additional analysis of high-default loan purposes to understand contributing factors before adjusting lending strategies.
+
+3.Monitor borrower segments with higher average DTI ratios during portfolio reviews.
+
+4.Use borrower segmentation (education, employment, and home ownership) to support targeted portfolio monitoring and customer engagement.
+
+5.Leverage interactive dashboards for ongoing portfolio performance tracking and management reporting.
 
